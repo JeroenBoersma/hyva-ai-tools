@@ -79,8 +79,8 @@ cat etc/hyva_cms/components.json | python3 -m json.tool
 
 ## Dependent Skills Unavailable
 
-If referenced skills (`hyva-exec-shell-cmd`, `hyva-create-module`, `hyva-render-image`) are not available:
+If referenced skills (`hyva-exec-shell-cmd`, `hyva-create-module`, `hyva-render-media-image`) are not available:
 
 - **hyva-exec-shell-cmd:** Manually determine environment. For Warden: prefix commands with `warden shell -c "..."`. For local: run commands directly.
 - **hyva-create-module:** Manually create module files (registration.php, composer.json, etc/module.xml) following the structure in `example-component.md`.
-- **hyva-render-image:** Use basic `<img>` tag or reference Hyvä Theme documentation for `\Hyva\Theme\ViewModel\Media` API.
+- **hyva-render-media-image:** Use basic `<img>` tag or reference Hyvä Theme documentation for `\Hyva\Theme\ViewModel\Media` API.

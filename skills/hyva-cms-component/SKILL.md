@@ -219,7 +219,7 @@ $content = $block->getData('content');
 
 **Image fields:**
 
-Use the `hyva-render-image` skill for rendering images. It provides the complete API reference and code patterns for the `\Hyva\Theme\ViewModel\Media` view model.
+Use the `hyva-render-media-image` skill for rendering images. It provides the complete API reference and code patterns for the `\Hyva\Theme\ViewModel\Media` view model.
 
 Add these imports when rendering images:
 
@@ -245,7 +245,7 @@ $image = $block->getData('image');
 <?php endif; ?>
 ```
 
-For responsive images with separate desktop and mobile sources, see the `hyva-render-image` skill.
+For responsive images with separate desktop and mobile sources, see the `hyva-render-media-image` skill.
 
 **Link fields:**
 ```php
@@ -311,7 +311,7 @@ $children = $block->getData('children') ?: [];
     ?>
     <div <?= /** @noEscape */ $block->getEditorAttrs('', $childUid) ?>>
         <?php if (!empty($image['src'])): ?>
-            <?php // For image rendering patterns, see the hyva-render-image skill ?>
+            <?php // For image rendering patterns, see the hyva-render-media-image skill ?>
             <?= /** @noEscape */ $mediaViewModel->getResponsivePictureHtml(
                 [$block->getResponsiveImageData($image)],
                 ['alt' => $image['alt'] ?? '', 'class' => 'w-full h-auto', 'loading' => 'lazy']
@@ -330,7 +330,7 @@ $children = $block->getData('children') ?: [];
 - Use `$block->getEditorAttrs('field_name', $childUid)` to enable live editing of child fields
 - Use `$block->getEditorAttrs('', $childUid)` on the child's root element
 - For images, check `!empty($image['src'])` and use `$block->getResponsiveImageData($image)` to process the image data
-- For advanced image rendering patterns (responsive breakpoints, etc.), see the `hyva-render-image` skill
+- For advanced image rendering patterns (responsive breakpoints, etc.), see the `hyva-render-media-image` skill
 
 ## Resources
 
