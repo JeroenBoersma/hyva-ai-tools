@@ -6,6 +6,7 @@ AI-powered skills for Magento 2 development with Hyva Theme. These skills extend
 
 | Skill | Description |
 |-------|-------------|
+| [hyva-alpine-component](skills/hyva-alpine-component/) | Write CSP-compliant Alpine.js components for Hyvä themes following best practices |
 | [hyva-child-theme](skills/hyva-child-theme/) | Create a Hyva child theme with proper directory structure, Tailwind CSS configuration, and theme inheritance |
 | [hyva-cms-component](skills/hyva-cms-component/) | Create custom Hyva CMS components with field presets, variant support, and PHTML templates |
 | [hyva-compile-tailwind-css](skills/hyva-compile-tailwind-css/) | Utility skill to compile Tailwind CSS for Hyva themes |
@@ -44,6 +45,7 @@ curl -fsSL https://gitlab.hyva.io/hyva-internal/hyva-ai-tools/-/raw/main/install
 
 Once installed, the AI assistant will automatically use these skills when relevant. You can also invoke them directly:
 
+- "Create an Alpine component for a dropdown menu"
 - "Create a Hyva child theme"
 - "Add a CMS component for a hero banner"
 - "Compile Tailwind CSS"
