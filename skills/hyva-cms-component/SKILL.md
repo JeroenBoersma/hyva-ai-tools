@@ -39,7 +39,10 @@ Gather component information:
 1. **Component name** (snake_case, e.g., `feature_card`)
 2. **Label** (display name in editor, e.g., "Feature Card")
 3. **Category** (Layout, Elements, Media, Content, or Other)
-4. **Icon** (optional - suggest creating one later)
+4. **Icon** (optional) - Offer these options using AskUserQuestion:
+   - **Use a lucide icon**: Suggest three icons from `vendor/hyva-themes/magento2-theme-module/src/view/base/web/svg/lucide/` with names most fitting for the component purpose. Format as `Hyva_Theme::svg/lucide/[icon-name].svg`. Example suggestions for a "feature card" might be `layout-template.svg`, `credit-card.svg`, `app-window.svg`.
+   - **Custom icon path**: Let the user enter a path in the format `Module_Name::images/custom.svg`
+   - **Skip for now**: No `icon` property will be set in the component definition
 
 ### Step 3: Field Selection
 
