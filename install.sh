@@ -8,6 +8,7 @@
 #   curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s codex
 #   curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s cursor
 #   curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s gemini
+#   curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s copilot
 #   curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s opencode
 #
 # Copyright (c) Hyva Themes https://hyva.io. All rights reserved.
@@ -61,6 +62,7 @@ usage() {
     echo "  codex     Install skills for Codex (.codex/skills/)"
     echo "  cursor    Install skills for Cursor (.cursor/skills/)"
     echo "  gemini    Install skills for Gemini (.gemini/skills/)"
+    echo "  copilot   Install skills for GitHub Copilot (.copilot/skills/)"
     echo "  opencode  Install skills for OpenCode (.opencode/skills/)"
     echo ""
     echo "Examples:"
@@ -68,6 +70,7 @@ usage() {
     echo "  curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s codex"
     echo "  curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s cursor"
     echo "  curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s gemini"
+    echo "  curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s copilot"
     echo "  curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s opencode"
     echo ""
     echo "Environment variables:"
@@ -90,6 +93,9 @@ get_skills_dir() {
             ;;
         gemini)
             echo ".gemini/skills"
+            ;;
+        copilot)
+            echo ".copilot/skills"
             ;;
         opencode)
             echo ".opencode/skills"

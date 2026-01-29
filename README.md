@@ -40,6 +40,9 @@ curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/head
 # For Gemini
 curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s gemini
 
+# For GitHub Copilot
+curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s copilot
+
 # For OpenCode
 curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/heads/main/install.sh | sh -s opencode
 ```
@@ -52,6 +55,7 @@ curl -fsSL https://raw.githubusercontent.com/hyva-themes/hyva-ai-tools/refs/head
     - **Codex**: `.codex/skills/`
     - **Cursor**: `.cursor/skills/`
     - **Gemini**: `.gemini/skills/`
+    - **GitHub Copilot**: `.copilot/skills/`
     - **OpenCode**: `.opencode/skills/`
 
 ## Usage
